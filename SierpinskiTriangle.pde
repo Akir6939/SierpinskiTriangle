@@ -1,4 +1,5 @@
-int count = 10;
+int count = 20;
+boolean bigger = true;
 public void setup()
 {
 	size(640,640);
@@ -10,7 +11,9 @@ public void draw()
 }
 public void mousePressed()//optional
 {
-	if(count<=320){
+	if(count==640||count==10)
+		bigger= !bigger;
+	if(bigger==true){
 		count*=2;
 	}
 	else{
